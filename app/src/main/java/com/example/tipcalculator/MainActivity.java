@@ -32,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
         tips = Float.parseFloat(getTip);
 
         Float totalCost = cost*(tips/100) + cost;
+        String finalCost = String.format("%.2f", totalCost);
 
-        total.setText(totalCost.toString());
+        total.setText(finalCost);
 
     }
 }
